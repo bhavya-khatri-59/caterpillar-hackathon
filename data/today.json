@@ -1,0 +1,160 @@
+{
+  "date": "2025-05-02",
+  "operator_id": "OP1001",
+  "machine_id": "EXC001",
+  "shift_start": "07:00",
+  "shift_end": "17:00",
+  "plan_start": "07:15",
+  "fuel_pct": 22.0,
+  "zones": {
+    "A": {
+      "people_density": "low",
+      "slope_deg": 4.0
+    },
+    "B": {
+      "people_density": "med",
+      "slope_deg": 11.0
+    },
+    "C": {
+      "people_density": "high",
+      "slope_deg": 2.0
+    },
+    "D": {
+      "people_density": "low",
+      "slope_deg": 6.0
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "T1",
+      "type": "truck_loading",
+      "zone": "C",
+      "quantity_m3": 280,
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "task_id": "T2",
+      "type": "backfill",
+      "zone": "A",
+      "quantity_m3": 200,
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "task_id": "T3",
+      "type": "truck_loading",
+      "zone": "D",
+      "quantity_m3": 150,
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "task_id": "T4",
+      "type": "trenching",
+      "zone": "A",
+      "quantity_m3": 150,
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "task_id": "T5",
+      "type": "trenching",
+      "zone": "B",
+      "quantity_m3": 110,
+      "priority": 5,
+      "status": "pending"
+    }
+  ],
+  "trucks_available": 0.8,
+  "forecast": [
+    {
+      "hour": 7,
+      "ground": "dry",
+      "rain_mm_h": 0.0,
+      "visibility_m": 2000,
+      "temp_c": 27,
+      "humidity_pct": 60
+    },
+    {
+      "hour": 8,
+      "ground": "dry",
+      "rain_mm_h": 0.0,
+      "visibility_m": 2000,
+      "temp_c": 28,
+      "humidity_pct": 58
+    },
+    {
+      "hour": 9,
+      "ground": "dry",
+      "rain_mm_h": 0.0,
+      "visibility_m": 2000,
+      "temp_c": 30,
+      "humidity_pct": 55
+    },
+    {
+      "hour": 10,
+      "ground": "dry",
+      "rain_mm_h": 0.0,
+      "visibility_m": 2000,
+      "temp_c": 31,
+      "humidity_pct": 55
+    },
+    {
+      "hour": 11,
+      "ground": "dry",
+      "rain_mm_h": 0.2,
+      "visibility_m": 1500,
+      "temp_c": 32,
+      "humidity_pct": 57
+    },
+    {
+      "hour": 12,
+      "ground": "wet",
+      "rain_mm_h": 4.0,
+      "visibility_m": 300,
+      "temp_c": 27,
+      "humidity_pct": 85
+    },
+    {
+      "hour": 13,
+      "ground": "mud",
+      "rain_mm_h": 7.0,
+      "visibility_m": 150,
+      "temp_c": 25,
+      "humidity_pct": 92
+    },
+    {
+      "hour": 14,
+      "ground": "mud",
+      "rain_mm_h": 7.0,
+      "visibility_m": 150,
+      "temp_c": 25,
+      "humidity_pct": 92
+    },
+    {
+      "hour": 15,
+      "ground": "mud",
+      "rain_mm_h": 7.0,
+      "visibility_m": 150,
+      "temp_c": 25,
+      "humidity_pct": 92
+    },
+    {
+      "hour": 16,
+      "ground": "mud",
+      "rain_mm_h": 3.0,
+      "visibility_m": 300,
+      "temp_c": 25,
+      "humidity_pct": 92
+    },
+    {
+      "hour": 17,
+      "ground": "mud",
+      "rain_mm_h": 3.0,
+      "visibility_m": 300,
+      "temp_c": 25,
+      "humidity_pct": 92
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "order": [
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "T1"
+  ],
+  "total_p50_min": 482.4,
+  "saving_min": 15.7,
+  "reason": "Do T2 (backfill), T4 (trenching) before the 12:00 rain: saves about 16 min at P50.",
+  "fuel_needed_l": 49.7,
+  "refuel_before_task": "T1"
+}

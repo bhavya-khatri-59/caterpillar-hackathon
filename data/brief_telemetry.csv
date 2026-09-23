@@ -1,0 +1,5 @@
+timestamp,machine_id,operator_id,engine_hours,fuel_used_l,load_cycles,idling_time_min,seatbelt_status,safety_alert_triggered
+2025-05-01 08:00,EXC001,OP1001,1245.0,5.2,12,30,Fastened,No
+2025-05-01 10:00,EXC001,OP1001,1247.0,3.8,2,55,Unfastened,Yes
+2025-05-01 14:00,EXC001,OP1001,1251.0,6.1,10,15,Fastened,No
+2025-05-02 09:00,EXC001,OP1001,1254.7,2.0,1,60,Unfastened,Yes

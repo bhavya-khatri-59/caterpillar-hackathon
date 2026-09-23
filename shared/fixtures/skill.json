@@ -1,0 +1,44 @@
+[
+  {
+    "operator_id": "OP1001",
+    "levels": {
+      "trenching": "standard",
+      "truck_loading": "standard",
+      "backfill": "standard"
+    },
+    "inputs": {
+      "total_hours": 6600.0,
+      "machine_type_hours": 5651.0,
+      "anomaly_rate": 0.0,
+      "soft_alerts_per_h": 0.01,
+      "shifts_trenching": 56.0,
+      "cycle_ratio_trenching": 1.007,
+      "shifts_truck_loading": 57.0,
+      "cycle_ratio_truck_loading": 0.957,
+      "shifts_backfill": 47.0,
+      "cycle_ratio_backfill": 0.992
+    },
+    "promotion_ready": false
+  },
+  {
+    "operator_id": "OP1004",
+    "levels": {
+      "trenching": "guided",
+      "truck_loading": "guided",
+      "backfill": "guided"
+    },
+    "inputs": {
+      "total_hours": 10526.0,
+      "machine_type_hours": 6659.0,
+      "anomaly_rate": 0.7,
+      "soft_alerts_per_h": 0.05,
+      "shifts_trenching": 52.0,
+      "cycle_ratio_trenching": 0.913,
+      "shifts_truck_loading": 57.0,
+      "cycle_ratio_truck_loading": 0.907,
+      "shifts_backfill": 55.0,
+      "cycle_ratio_backfill": 0.918
+    },
+    "promotion_ready": false
+  }
+]

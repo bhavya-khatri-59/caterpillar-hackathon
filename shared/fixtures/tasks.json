@@ -1,0 +1,197 @@
+[
+  {
+    "task_id": "T1",
+    "type": "truck_loading",
+    "zone": "C",
+    "quantity_m3": 280.0,
+    "priority": 1,
+    "status": "pending",
+    "p10_min": 123.1,
+    "p50_min": 160.0,
+    "p90_min": 211.0,
+    "eta_breakdown": [
+      {
+        "label": "Formula prior (280 m3 at 150 m3/h)",
+        "minutes": 112.0
+      },
+      {
+        "label": "Conditions (visibility +14 min, trucks +14 min)",
+        "minutes": 41.4
+      },
+      {
+        "label": "Your history (x1.04 from 285 tasks)",
+        "minutes": 6.6
+      },
+      {
+        "label": "Range P10-P90 (123-211 min)",
+        "minutes": 87.9
+      }
+    ],
+    "risk_factors": [
+      {
+        "name": "people_density",
+        "level": "high",
+        "note": "High foot traffic in this zone",
+        "action": "Agree a spotter and a fixed walkway before starting; keep people out of the swing radius."
+      },
+      {
+        "name": "visibility",
+        "level": "med",
+        "note": "Visibility about 300 m",
+        "action": "Use lights and slow the swing near the spoil pile."
+      },
+      {
+        "name": "ground",
+        "level": "med",
+        "note": "Wet ground, rain 4 mm/h",
+        "action": "Allow longer stopping distance on wet ground; avoid sharp travel turns."
+      }
+    ]
+  },
+  {
+    "task_id": "T2",
+    "type": "backfill",
+    "zone": "A",
+    "quantity_m3": 200.0,
+    "priority": 2,
+    "status": "pending",
+    "p10_min": 55.6,
+    "p50_min": 65.3,
+    "p90_min": 76.1,
+    "eta_breakdown": [
+      {
+        "label": "Formula prior (200 m3 at 212 m3/h)",
+        "minutes": 56.6
+      },
+      {
+        "label": "Conditions (slope +6 min, heat -1 min)",
+        "minutes": 6.0
+      },
+      {
+        "label": "Your history (x1.04 from 285 tasks)",
+        "minutes": 2.7
+      },
+      {
+        "label": "Range P10-P90 (56-76 min)",
+        "minutes": 20.6
+      }
+    ],
+    "risk_factors": []
+  },
+  {
+    "task_id": "T3",
+    "type": "truck_loading",
+    "zone": "D",
+    "quantity_m3": 150.0,
+    "priority": 3,
+    "status": "pending",
+    "p10_min": 64.6,
+    "p50_min": 77.1,
+    "p90_min": 90.3,
+    "eta_breakdown": [
+      {
+        "label": "Formula prior (150 m3 at 150 m3/h)",
+        "minutes": 60.0
+      },
+      {
+        "label": "Conditions (slope +8 min, trucks +7 min)",
+        "minutes": 13.9
+      },
+      {
+        "label": "Your history (x1.04 from 285 tasks)",
+        "minutes": 3.2
+      },
+      {
+        "label": "Range P10-P90 (65-90 min)",
+        "minutes": 25.8
+      }
+    ],
+    "risk_factors": [
+      {
+        "name": "slope",
+        "level": "med",
+        "note": "Side slope about 6 deg",
+        "action": "Keep the tracks square to the slope and the load low when swinging."
+      }
+    ]
+  },
+  {
+    "task_id": "T4",
+    "type": "trenching",
+    "zone": "A",
+    "quantity_m3": 150.0,
+    "priority": 4,
+    "status": "pending",
+    "p10_min": 86.1,
+    "p50_min": 102.3,
+    "p90_min": 118.7,
+    "eta_breakdown": [
+      {
+        "label": "Formula prior (150 m3 at 101 m3/h)",
+        "minutes": 88.9
+      },
+      {
+        "label": "Conditions (slope +11 min)",
+        "minutes": 9.2
+      },
+      {
+        "label": "Your history (x1.04 from 285 tasks)",
+        "minutes": 4.2
+      },
+      {
+        "label": "Range P10-P90 (86-119 min)",
+        "minutes": 32.6
+      }
+    ],
+    "risk_factors": []
+  },
+  {
+    "task_id": "T5",
+    "type": "trenching",
+    "zone": "B",
+    "quantity_m3": 110.0,
+    "priority": 5,
+    "status": "pending",
+    "p10_min": 65.2,
+    "p50_min": 77.7,
+    "p90_min": 94.3,
+    "eta_breakdown": [
+      {
+        "label": "Formula prior (110 m3 at 101 m3/h)",
+        "minutes": 65.2
+      },
+      {
+        "label": "Conditions (slope +13 min)",
+        "minutes": 9.3
+      },
+      {
+        "label": "Your history (x1.04 from 285 tasks)",
+        "minutes": 3.2
+      },
+      {
+        "label": "Range P10-P90 (65-94 min)",
+        "minutes": 29.1
+      }
+    ],
+    "risk_factors": [
+      {
+        "name": "people_density",
+        "level": "med",
+        "note": "Moderate foot traffic in this zone",
+        "action": "Confirm the exclusion zone with the ground crew before starting."
+      },
+      {
+        "name": "slope",
+        "level": "high",
+        "note": "Side slope about 11 deg",
+        "action": "Bench the slope or reposition; check the lift chart for the reduced capacity."
+      },
+      {
+        "name": "heat",
+        "level": "med",
+        "note": "Heat index 36 C",
+        "action": "Drink water every hour; take the scheduled break."
+      }
+    ]
+  }
+]

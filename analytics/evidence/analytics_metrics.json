@@ -1,0 +1,123 @@
+{
+  "task_time": {
+    "split": "by shift in time: first 60% train, next 20% calibrate, last 20% test",
+    "n_train": 6483,
+    "n_cal": 2154,
+    "n_test": 2175,
+    "coverage_target": 0.8,
+    "coverage_p10_p90_raw": 0.813,
+    "coverage_p10_p90_calibrated": 0.804,
+    "coverage_prior_pm20pct": 0.459,
+    "mae_p50_min_model": 9.82,
+    "mae_p50_min_prior": 22.14,
+    "pinball_model": 3.148,
+    "pinball_prior_pm20pct": 8.439,
+    "median_band_width_pct": 29.9,
+    "qhat_log": -0.0029
+  },
+  "anomaly": {
+    "rules_plus_z": {
+      "recall": 0.961,
+      "precision": 0.75,
+      "flagged_shifts": 164,
+      "per_pattern": {
+        "belt_off_idle": {
+          "planted": 63,
+          "detected": 63
+        },
+        "after_hours": {
+          "planted": 37,
+          "detected": 37
+        },
+        "cycle_drift": {
+          "planted": 12,
+          "detected": 11
+        },
+        "fuel_heavy": {
+          "planted": 15,
+          "detected": 11
+        }
+      }
+    },
+    "rules_only": {
+      "recall": 0.787,
+      "precision": 0.952,
+      "flagged_shifts": 105,
+      "per_pattern": {
+        "belt_off_idle": {
+          "planted": 63,
+          "detected": 63
+        },
+        "after_hours": {
+          "planted": 37,
+          "detected": 37
+        },
+        "cycle_drift": {
+          "planted": 12,
+          "detected": 0
+        },
+        "fuel_heavy": {
+          "planted": 15,
+          "detected": 0
+        }
+      }
+    },
+    "z_cutoff": 3.5,
+    "unit": "operator-shift; precision counts review/coach flags only"
+  },
+  "brief_rows": {
+    "flagged_rows": [
+      2,
+      4
+    ],
+    "expected_rows": [
+      2,
+      4
+    ],
+    "pass": true,
+    "rules_by_row": {
+      "2": [
+        "belt_off_idle",
+        "belt_off_engine_on",
+        "idle_ratio_high",
+        "fuel_per_cycle_high"
+      ],
+      "4": [
+        "belt_off_idle",
+        "idle_ratio_high",
+        "fuel_per_cycle_high",
+        "after_hours_running"
+      ]
+    }
+  },
+  "incident_log": {
+    "ok": true,
+    "count": 4,
+    "head_hash": "48133ebea80f4f52efb9366d759b41ca3f600739bc8282e7fe9dc6e34df63836",
+    "first_broken_seq": null,
+    "reason": null
+  },
+  "task_order": {
+    "order": [
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T1"
+    ],
+    "saving_min": 15.7,
+    "reason": "Do T2 (backfill), T4 (trenching) before the 12:00 rain: saves about 16 min at P50.",
+    "total_p50_min": 482.4,
+    "fuel_needed_l": 49.7,
+    "refuel_before_task": "T1"
+  },
+  "data": {
+    "operators": 30,
+    "shifts_per_operator": 60,
+    "telemetry_rows": 18000,
+    "task_history_rows": 10812,
+    "planted_shifts": 127,
+    "seed": 42,
+    "note": "Seeded synthetic data in the brief's columns; the models recover effects we planted. The point is the pipeline, which retrains on real history."
+  }
+}
