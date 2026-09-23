@@ -4,6 +4,7 @@ pydantic==2.13.5
 numpy==2.4.6
 pandas==3.0.6
 xgboost==3.2.0
+scikit-learn==1.9.1
 PyYAML==6.0.3
 # tests
 pytest==9.1.1
